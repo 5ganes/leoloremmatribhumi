@@ -169,10 +169,10 @@
         <div align="center">
             <div class="clearfix"></div>
             <div class="blockmenu" style="height: 100px;">
-              <a href="http://pollution.gov.np/" target="_blank">
+              <a href="http://www.lionsclubs.org" target="_blank">
                   <span class="block-icon"></span>
                   <div class="block-content">
-                   <div class="block-content-title" style="font-size:16px">DOEnv, Air Quality Monitoring, polution.gov.np</div>
+                   <div class="block-content-title" style="font-size:16px">Lions Club International</div>
                   </div>
               </a>
             </div>

@@ -40,7 +40,7 @@
                                         $video = $groups->getByParentId(VIDEO);
                                         while($videoGet = $conn->fetchArray($video)){?>
                                           <article>
-                                              <p><iframe id="video" width="245" height="170" src="<?=$videoGet['contents'];?>" frameborder="1" allowfullscreen></iframe></p>
+                                              <p><iframe id="video" width="200" height="150" src="<?=$videoGet['contents'];?>" frameborder="1" allowfullscreen></iframe></p>
                                               <h3><?php echo $videoGet['name'];?></h3>
                                           </article>
                                         <?php }?>
