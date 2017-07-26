@@ -19,16 +19,6 @@
                   <!--<p>सिंहदरबार, काठमाडौँ, नेपाल</p>-->
               </div>
               <div class="col-md-2 flag" align="right">
-                <div class="language">
-                  <div class="container" style="width:100% !important;">
-                      <?php if($lan=='en'){?>
-                        <a href="<?php echo SITE_URL;?>" class="btn btn-sm btn-primary pull-right"><span style="font-size:12px;"><b>नेपाली</b></span></a>
-                      <?php }
-                      else{?>
-                        <a href="<?php echo SITE_URL;?>en" class="btn btn-sm btn-primary pull-right"><span style="font-size:12px;"><b>English</b></span></a>
-                      <?php }?>
-                  </div>      
-              </div>
                 <div class="nepal-flag"><img src="images/leo_logo.png" width="90"></div>
               </div>
           </h1>           
@@ -64,7 +54,7 @@
           <section class="news panel  marquee-body">
               <div class="" style="background-color:#c76353;"> 
                   <div class="marquee_div">
-                      <div class="marquee-title"><?php if($lan=='en') echo 'Hot News'; else echo 'ताजा समाचार'; echo ' : ';?></div>
+                      <div class="marquee-title"><?php if($lan=='en') echo 'ताजा समाचार'; else echo 'Hot News'; echo ' : ';?></div>
                       <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" truespeed="">
                           <?php $hot=$groups->getById(HOT_NEWS); $hot=$conn->fetchArray($hot);?>
                           <a href="<?php if($lan=='en') echo 'en/'; echo $hot['urlname'];?>"><?php if($lan=='en') echo $hot['shortcontentsen']; else echo $hot['shortcontents'];?></a>
@@ -81,6 +71,14 @@
                         }?>
                       </div> -->
 
+                      <div class="marquee-title login" style="width: 15%;background: none;">
+                          <?php if($lan=='en'){?>
+                            <a href="<?php echo SITE_URL;?>" class="btn btn-sm btn-primary pull-right"><span style="font-size:12px;"><b>नेपाली</b></span></a>
+                          <?php }
+                          else{?>
+                            <a href="<?php echo SITE_URL;?>en" class="btn btn-sm btn-primary pull-right"><span style="font-size:12px;"><b>English</b></span></a>
+                          <?php }?>
+                      </div>
                   </div>
                   <div class="clearfix"></div>
               </div>    
